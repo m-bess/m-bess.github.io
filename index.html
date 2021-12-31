@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .card {
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 10px;
+      height: 525px;
+      width: 300px;
+      justify-self: center;
+      margin: 75px auto;
+    }
+
+    #nft {
+      height: 250px;
+      width: 250px;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .title {
+      color: #ffffff;
+      font-size: 18px;
+      padding-left: 25px;
+      font-weight: 600;
+    }
+
+    .description {
+      color: hsl(215, 51%, 70%);
+      font-size: 16px;
+      padding-left: 25px;
+      font-weight: 300;
+      margin-bottom: 0px;
+    }
+
+    .metrics {
+      display: flex;
+      flex-direction: row;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      margin-left: 25px;
+      margin-right: 25px;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .price {
+      color: hsl(178, 100%, 50%);
+      font-weight: 400;
+      align-items: center;
+    }
+
+    .price::before {
+      content: url(images/icon-ethereum.svg);
+      padding-right: 5px;
+      vertical-align: middle;
+    }
+
+    .time {
+      color: hsl(215, 51%, 70%);
+      font-weight: 300;
+    }
+
+    .time::before {
+      content: url(images/icon-clock.svg);
+      padding-right: 5px;
+      vertical-align: middle;
+    }
+
+    hr {
+      width: 80%;
+      background: hsl(215, 32%, 27%);
+      background-color: hsl(215, 32%, 27%);
+      margin-top: 0;
+      margin-bottom: 15px;
+      height: 1px;
+      border: none;
+    }
+
+    .card-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 25px;
+      color: hsl(215, 51%, 70%);
+    }
+
+    #profile {
+      height: 30px;
+      width: 30px;
+      border: 1px solid white;
+      border-radius: 100%;
+    }
+
+    .creator {
+      color: #ffffff;
+      text-decoration: bold;
+    }
+
+    p {
+      padding-left: 15px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img id="nft" src="/images/image-equilibrium.jpg" alt="Image Equilibrium">
+
+    <h1 class="title">Equilibrium #3429</h1>
+
+    <h4 class="description">Our Equilibrium collection promotes balance and calm.</h4>
+
+    <div class="metrics">
+      <h4 class="price">0.041 ETH</h4>
+      <h4 class="time">3 days left</h4>
+    </div>
+    <hr>
+    <div class="card-footer">
+      <img id="profile" src="/images/image-avatar.png" alt="Jules Wyvern">
+      <p>Creation of <span class="creator">Jules Wyvern</span></p>
+    </div>
+  </div>
+  
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">MCVB</a>.
+  </div>
+</body>
+</html>
